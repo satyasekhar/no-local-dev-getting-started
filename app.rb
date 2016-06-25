@@ -17,8 +17,11 @@ get "/" do
   erb :home
 end
 
-post '/new' do
+get '/new' do
   erb :form
+end
+
+post '/new' do
   Contact.create  params[:contact]
   redirect to('/contacts')
 end
