@@ -17,6 +17,11 @@ get "/" do
   erb :home
 end
 
+post '/new' do
+  erb :form
+  Task.create  params[:task]
+  redirect to('/contacts')
+end
 
 class Contact < ActiveRecord::Base
   self.table_name = 'herokurubysfdc1.contact'
