@@ -19,7 +19,7 @@ end
 
 post '/new' do
   erb :form
-  Task.create  params[:task]
+  Contact.create  params[:contact]
   redirect to('/contacts')
 end
 
