@@ -5,7 +5,7 @@ require 'sinatra/activerecord'
 require './environments'
 
 class Contact < ActiveRecord::Base
-  self.table_name = 'salesforce.contact'
+  self.table_name = 'herokurubysfdc1.contact'
 end
 
 get "/contacts" do
@@ -19,7 +19,7 @@ end
 
 
 class Contact < ActiveRecord::Base
-  self.table_name = 'salesforce.contact'
+  self.table_name = 'herokurubysfdc1.contact'
 end
 
 #get "/contacts" do
